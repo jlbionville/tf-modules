@@ -7,6 +7,6 @@ resource "aws_instance" "wordpress" {
     labs   = "ec2"
     number = "01"
     project ="chef"
-    Name=var.ec2_tag_name
+    Name    = var.ec2_tag_name
   }
 }
