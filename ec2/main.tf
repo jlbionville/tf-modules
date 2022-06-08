@@ -1,5 +1,8 @@
 # contains filter locals data
-
+module "global-configuration" {
+  source = "/home/ubuntu/depots/tf-workspace/global-config"
+  
+} 
 data "aws_ami" "amzlinux2" {
   most_recent = true
   owners      = ["amazon"]
