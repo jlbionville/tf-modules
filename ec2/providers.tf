@@ -1,6 +1,6 @@
 provider "aws" {
   alias   = "aws_ec2"
-  profile = "admincs"
+  profile = var.aws_profile
 
 
   default_tags {

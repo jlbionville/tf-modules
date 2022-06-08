@@ -17,3 +17,7 @@ variable ami_name {
 variable ec2_role{
   default = ""
 }
+
+variable "aws_profile" {
+  default = "admincs"
+}
