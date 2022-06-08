@@ -3,13 +3,14 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 4.0"      
+      version = "~> 4.0"
     }
-    
-  }
 
+  }
+  # backend "s3" {
+  #   bucket = "alfaco-labs"
+  #   key    = "labs/ec2/01/deployed.tfstate"
+  #   acl    = "bucket-owner-full-control"
+  # }
 }
-provider "aws" {
-  alias = "aws_ec2"
-  profile= "admincs"
-}
+
