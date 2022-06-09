@@ -2,3 +2,12 @@
 variable "bucket_name" {
   default="default-bucket"
 }
+
+variable project_name{
+    default = "default"
+}
+
+variable "company" {
+  default="alfaco"
+  
+}
