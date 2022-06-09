@@ -1,3 +1,8 @@
+
+module "global-configuration" {
+  source = "/home/ubuntu/depots/tf-workspace/global-config"
+  
+} 
 resource "aws_s3_bucket" "default_bucket" {
   bucket = local.bucket_name
 }
